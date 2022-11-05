@@ -15,6 +15,7 @@ namespace Vista_Bancos
     public partial class Cheque : Form
     {
         Convertir con = new Convertir();
+        CsControlador cn = new CsControlador();
         private static Cheque instancia = null;
         
         public static Cheque ventana_unica()
@@ -53,6 +54,69 @@ namespace Vista_Bancos
             navegador1.textboxi = Idtextbox;
             navegador1.actual = this;
             navegador1.cargar(dataGridView1, Grupotextbox, "tbl_ctrl_cheques");
+        }
+
+        private void txtIDConcepto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_covertirMonto_Click(object sender, EventArgs e)
+        {
+            txtMontoLetras.Text = con.enletras(txtMonto.Text).ToUpper();
+            panelCtaBancaria.Visible = false;
+            panelConcepto.Visible = false;
+            panelBancos.Visible = false;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            panelBancos.Visible = true;
+            cn.llenartablaa(dataGridView2.Tag.ToString(), dataGridView2);
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtIDBanco.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+            txtBanosConsulta.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+            panelBancos.Visible = false;
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtIDCuentaBancaria.Text = dataGridView3.CurrentRow.Cells[0].Value.ToString();
+            txtCtaBancariaConsulta.Text = dataGridView3.CurrentRow.Cells[1].Value.ToString();
+            panelCtaBancaria.Visible = false;
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtIDConcepto.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
+            txtConceptoConsulta.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
+            panelConcepto.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panelCtaBancaria.Visible = true;
+            cn.llenartablaa(dataGridView3.Tag.ToString(), dataGridView3);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panelConcepto.Visible = true;
+            cn.llenartablaa(dataGridView4.Tag.ToString(), dataGridView4);
+        }
+
+        private void btn_Imprimir_Click(object sender, EventArgs e)
+        {
+            imprimirCheque frm_imp = new imprimirCheque();
+            frm_imp.Show();
         }
     }
 }

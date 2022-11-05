@@ -30,15 +30,18 @@ namespace Vista_Bancos
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnEstadoCuenta = new System.Windows.Forms.Button();
+            this.btnRepCuentasBanc = new System.Windows.Forms.Button();
+            this.btnReportesBancarios = new System.Windows.Forms.Button();
             this.panelMantenimientos = new System.Windows.Forms.Panel();
             this.CncBancario = new System.Windows.Forms.Button();
             this.btnTipoDeCambio = new System.Windows.Forms.Button();
             this.btnCuentasBanc = new System.Windows.Forms.Button();
             this.btnBancos = new System.Windows.Forms.Button();
             this.btnMantenimientos = new System.Windows.Forms.Button();
-            this.btnRepBanc = new System.Windows.Forms.Button();
             this.panelPartidasCont = new System.Windows.Forms.Panel();
             this.btnOrdenes = new System.Windows.Forms.Button();
+            this.btnIngresosEgresos = new System.Windows.Forms.Button();
             this.btnPolizas = new System.Windows.Forms.Button();
             this.btnPartidasCont = new System.Windows.Forms.Button();
             this.panelConceptosBanc = new System.Windows.Forms.Panel();
@@ -50,7 +53,6 @@ namespace Vista_Bancos
             this.btnCheques = new System.Windows.Forms.Button();
             this.Procesos = new System.Windows.Forms.Button();
             this.logop = new System.Windows.Forms.Panel();
-            this.btnIngresosEgresos = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelMantenimientos.SuspendLayout();
             this.panelPartidasCont.SuspendLayout();
@@ -62,9 +64,11 @@ namespace Vista_Bancos
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(203)))), ((int)(((byte)(175)))));
             this.panelSideMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelSideMenu.Controls.Add(this.btnEstadoCuenta);
+            this.panelSideMenu.Controls.Add(this.btnRepCuentasBanc);
+            this.panelSideMenu.Controls.Add(this.btnReportesBancarios);
             this.panelSideMenu.Controls.Add(this.panelMantenimientos);
             this.panelSideMenu.Controls.Add(this.btnMantenimientos);
-            this.panelSideMenu.Controls.Add(this.btnRepBanc);
             this.panelSideMenu.Controls.Add(this.panelPartidasCont);
             this.panelSideMenu.Controls.Add(this.btnPartidasCont);
             this.panelSideMenu.Controls.Add(this.panelConceptosBanc);
@@ -76,6 +80,65 @@ namespace Vista_Bancos
             this.panelSideMenu.Size = new System.Drawing.Size(316, 556);
             this.panelSideMenu.TabIndex = 3;
             // 
+            // btnEstadoCuenta
+            // 
+            this.btnEstadoCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
+            this.btnEstadoCuenta.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstadoCuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEstadoCuenta.FlatAppearance.BorderSize = 0;
+            this.btnEstadoCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadoCuenta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstadoCuenta.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEstadoCuenta.Location = new System.Drawing.Point(0, 745);
+            this.btnEstadoCuenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEstadoCuenta.Name = "btnEstadoCuenta";
+            this.btnEstadoCuenta.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnEstadoCuenta.Size = new System.Drawing.Size(295, 48);
+            this.btnEstadoCuenta.TabIndex = 11;
+            this.btnEstadoCuenta.Text = "Estados de Cuenta";
+            this.btnEstadoCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstadoCuenta.UseVisualStyleBackColor = true;
+            this.btnEstadoCuenta.Click += new System.EventHandler(this.btnEstadoCuenta_Click);
+            // 
+            // btnRepCuentasBanc
+            // 
+            this.btnRepCuentasBanc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
+            this.btnRepCuentasBanc.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnRepCuentasBanc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRepCuentasBanc.FlatAppearance.BorderSize = 0;
+            this.btnRepCuentasBanc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepCuentasBanc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRepCuentasBanc.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRepCuentasBanc.Location = new System.Drawing.Point(0, 697);
+            this.btnRepCuentasBanc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRepCuentasBanc.Name = "btnRepCuentasBanc";
+            this.btnRepCuentasBanc.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnRepCuentasBanc.Size = new System.Drawing.Size(295, 48);
+            this.btnRepCuentasBanc.TabIndex = 10;
+            this.btnRepCuentasBanc.Text = "Reportes Cuentas Bancarias";
+            this.btnRepCuentasBanc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRepCuentasBanc.UseVisualStyleBackColor = true;
+            this.btnRepCuentasBanc.Click += new System.EventHandler(this.btnRepCuentasBanc_Click);
+            // 
+            // btnReportesBancarios
+            // 
+            this.btnReportesBancarios.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnReportesBancarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportesBancarios.FlatAppearance.BorderSize = 0;
+            this.btnReportesBancarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportesBancarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportesBancarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnReportesBancarios.Location = new System.Drawing.Point(0, 649);
+            this.btnReportesBancarios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReportesBancarios.Name = "btnReportesBancarios";
+            this.btnReportesBancarios.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnReportesBancarios.Size = new System.Drawing.Size(295, 48);
+            this.btnReportesBancarios.TabIndex = 9;
+            this.btnReportesBancarios.Text = "Reportes Bancarios";
+            this.btnReportesBancarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportesBancarios.UseVisualStyleBackColor = true;
+            this.btnReportesBancarios.Click += new System.EventHandler(this.btnReportesBancarios_Click);
+            // 
             // panelMantenimientos
             // 
             this.panelMantenimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
@@ -84,7 +147,7 @@ namespace Vista_Bancos
             this.panelMantenimientos.Controls.Add(this.btnCuentasBanc);
             this.panelMantenimientos.Controls.Add(this.btnBancos);
             this.panelMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMantenimientos.Location = new System.Drawing.Point(0, 520);
+            this.panelMantenimientos.Location = new System.Drawing.Point(0, 472);
             this.panelMantenimientos.Margin = new System.Windows.Forms.Padding(4);
             this.panelMantenimientos.Name = "panelMantenimientos";
             this.panelMantenimientos.Size = new System.Drawing.Size(295, 177);
@@ -96,7 +159,7 @@ namespace Vista_Bancos
             this.CncBancario.FlatAppearance.BorderSize = 0;
             this.CncBancario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CncBancario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CncBancario.Location = new System.Drawing.Point(0, 129);
+            this.CncBancario.Location = new System.Drawing.Point(0, 134);
             this.CncBancario.Margin = new System.Windows.Forms.Padding(4);
             this.CncBancario.Name = "CncBancario";
             this.CncBancario.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -113,7 +176,7 @@ namespace Vista_Bancos
             this.btnTipoDeCambio.FlatAppearance.BorderSize = 0;
             this.btnTipoDeCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTipoDeCambio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTipoDeCambio.Location = new System.Drawing.Point(0, 86);
+            this.btnTipoDeCambio.Location = new System.Drawing.Point(0, 91);
             this.btnTipoDeCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoDeCambio.Name = "btnTipoDeCambio";
             this.btnTipoDeCambio.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -131,7 +194,7 @@ namespace Vista_Bancos
             this.btnCuentasBanc.FlatAppearance.BorderSize = 0;
             this.btnCuentasBanc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCuentasBanc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCuentasBanc.Location = new System.Drawing.Point(0, 43);
+            this.btnCuentasBanc.Location = new System.Drawing.Point(0, 48);
             this.btnCuentasBanc.Margin = new System.Windows.Forms.Padding(4);
             this.btnCuentasBanc.Name = "btnCuentasBanc";
             this.btnCuentasBanc.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -153,7 +216,7 @@ namespace Vista_Bancos
             this.btnBancos.Margin = new System.Windows.Forms.Padding(4);
             this.btnBancos.Name = "btnBancos";
             this.btnBancos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnBancos.Size = new System.Drawing.Size(295, 43);
+            this.btnBancos.Size = new System.Drawing.Size(295, 48);
             this.btnBancos.TabIndex = 8;
             this.btnBancos.Text = "Bancos";
             this.btnBancos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,7 +231,7 @@ namespace Vista_Bancos
             this.btnMantenimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMantenimientos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMantenimientos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnMantenimientos.Location = new System.Drawing.Point(0, 472);
+            this.btnMantenimientos.Location = new System.Drawing.Point(0, 424);
             this.btnMantenimientos.Margin = new System.Windows.Forms.Padding(4);
             this.btnMantenimientos.Name = "btnMantenimientos";
             this.btnMantenimientos.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -178,25 +241,6 @@ namespace Vista_Bancos
             this.btnMantenimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMantenimientos.UseVisualStyleBackColor = true;
             this.btnMantenimientos.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnRepBanc
-            // 
-            this.btnRepBanc.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnRepBanc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRepBanc.FlatAppearance.BorderSize = 0;
-            this.btnRepBanc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRepBanc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRepBanc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnRepBanc.Location = new System.Drawing.Point(0, 424);
-            this.btnRepBanc.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRepBanc.Name = "btnRepBanc";
-            this.btnRepBanc.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnRepBanc.Size = new System.Drawing.Size(295, 48);
-            this.btnRepBanc.TabIndex = 4;
-            this.btnRepBanc.Text = "Reportes Bancarios";
-            this.btnRepBanc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRepBanc.UseVisualStyleBackColor = true;
-            this.btnRepBanc.Click += new System.EventHandler(this.btnRepBanc_Click);
             // 
             // panelPartidasCont
             // 
@@ -227,6 +271,24 @@ namespace Vista_Bancos
             this.btnOrdenes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOrdenes.UseVisualStyleBackColor = true;
             this.btnOrdenes.Click += new System.EventHandler(this.btnEgresos_Click);
+            // 
+            // btnIngresosEgresos
+            // 
+            this.btnIngresosEgresos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIngresosEgresos.FlatAppearance.BorderSize = 0;
+            this.btnIngresosEgresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresosEgresos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresosEgresos.Location = new System.Drawing.Point(0, 43);
+            this.btnIngresosEgresos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIngresosEgresos.Name = "btnIngresosEgresos";
+            this.btnIngresosEgresos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnIngresosEgresos.Size = new System.Drawing.Size(295, 10);
+            this.btnIngresosEgresos.TabIndex = 2;
+            this.btnIngresosEgresos.Text = "Ingresos y Egresos";
+            this.btnIngresosEgresos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIngresosEgresos.UseVisualStyleBackColor = true;
+            this.btnIngresosEgresos.Visible = false;
+            this.btnIngresosEgresos.Click += new System.EventHandler(this.btnIngresosEgresos_Click);
             // 
             // btnPolizas
             // 
@@ -287,7 +349,7 @@ namespace Vista_Bancos
             this.btnConcilacionBancaria.FlatAppearance.BorderSize = 0;
             this.btnConcilacionBancaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConcilacionBancaria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConcilacionBancaria.Location = new System.Drawing.Point(0, 187);
+            this.btnConcilacionBancaria.Location = new System.Drawing.Point(0, 235);
             this.btnConcilacionBancaria.Margin = new System.Windows.Forms.Padding(4);
             this.btnConcilacionBancaria.Name = "btnConcilacionBancaria";
             this.btnConcilacionBancaria.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -304,7 +366,7 @@ namespace Vista_Bancos
             this.btnBitacora.FlatAppearance.BorderSize = 0;
             this.btnBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBitacora.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBitacora.Location = new System.Drawing.Point(0, 144);
+            this.btnBitacora.Location = new System.Drawing.Point(0, 192);
             this.btnBitacora.Margin = new System.Windows.Forms.Padding(4);
             this.btnBitacora.Name = "btnBitacora";
             this.btnBitacora.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -321,7 +383,7 @@ namespace Vista_Bancos
             this.btnMovBanc.FlatAppearance.BorderSize = 0;
             this.btnMovBanc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMovBanc.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMovBanc.Location = new System.Drawing.Point(0, 101);
+            this.btnMovBanc.Location = new System.Drawing.Point(0, 149);
             this.btnMovBanc.Margin = new System.Windows.Forms.Padding(4);
             this.btnMovBanc.Name = "btnMovBanc";
             this.btnMovBanc.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -338,7 +400,7 @@ namespace Vista_Bancos
             this.btnDisponibilidad.FlatAppearance.BorderSize = 0;
             this.btnDisponibilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDisponibilidad.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDisponibilidad.Location = new System.Drawing.Point(0, 55);
+            this.btnDisponibilidad.Location = new System.Drawing.Point(0, 103);
             this.btnDisponibilidad.Margin = new System.Windows.Forms.Padding(4);
             this.btnDisponibilidad.Name = "btnDisponibilidad";
             this.btnDisponibilidad.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -355,16 +417,15 @@ namespace Vista_Bancos
             this.btnDepositos.FlatAppearance.BorderSize = 0;
             this.btnDepositos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDepositos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepositos.Location = new System.Drawing.Point(0, 45);
+            this.btnDepositos.Location = new System.Drawing.Point(0, 55);
             this.btnDepositos.Margin = new System.Windows.Forms.Padding(4);
             this.btnDepositos.Name = "btnDepositos";
             this.btnDepositos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnDepositos.Size = new System.Drawing.Size(295, 10);
+            this.btnDepositos.Size = new System.Drawing.Size(295, 48);
             this.btnDepositos.TabIndex = 1;
-            this.btnDepositos.Text = "Depositos";
+            this.btnDepositos.Text = "Cheques Planilla";
             this.btnDepositos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDepositos.UseVisualStyleBackColor = true;
-            this.btnDepositos.Visible = false;
             this.btnDepositos.Click += new System.EventHandler(this.btnDepositos_Click);
             // 
             // btnCheques
@@ -377,7 +438,7 @@ namespace Vista_Bancos
             this.btnCheques.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheques.Name = "btnCheques";
             this.btnCheques.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnCheques.Size = new System.Drawing.Size(295, 45);
+            this.btnCheques.Size = new System.Drawing.Size(295, 55);
             this.btnCheques.TabIndex = 0;
             this.btnCheques.Text = "Cheques";
             this.btnCheques.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -412,24 +473,6 @@ namespace Vista_Bancos
             this.logop.Size = new System.Drawing.Size(867, 532);
             this.logop.TabIndex = 6;
             // 
-            // btnIngresosEgresos
-            // 
-            this.btnIngresosEgresos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIngresosEgresos.FlatAppearance.BorderSize = 0;
-            this.btnIngresosEgresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresosEgresos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresosEgresos.Location = new System.Drawing.Point(0, 43);
-            this.btnIngresosEgresos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnIngresosEgresos.Name = "btnIngresosEgresos";
-            this.btnIngresosEgresos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnIngresosEgresos.Size = new System.Drawing.Size(295, 10);
-            this.btnIngresosEgresos.TabIndex = 2;
-            this.btnIngresosEgresos.Text = "Ingresos y Egresos";
-            this.btnIngresosEgresos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIngresosEgresos.UseVisualStyleBackColor = true;
-            this.btnIngresosEgresos.Visible = false;
-            this.btnIngresosEgresos.Click += new System.EventHandler(this.btnIngresosEgresos_Click);
-            // 
             // Banco_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -456,7 +499,6 @@ namespace Vista_Bancos
 
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnMantenimientos;
-        private System.Windows.Forms.Button btnRepBanc;
         private System.Windows.Forms.Panel panelPartidasCont;
         private System.Windows.Forms.Button btnOrdenes;
         private System.Windows.Forms.Button btnPolizas;
@@ -476,5 +518,8 @@ namespace Vista_Bancos
         private System.Windows.Forms.Button btnBitacora;
         private System.Windows.Forms.Button btnConcilacionBancaria;
         private System.Windows.Forms.Button btnIngresosEgresos;
+        private System.Windows.Forms.Button btnRepCuentasBanc;
+        private System.Windows.Forms.Button btnReportesBancarios;
+        private System.Windows.Forms.Button btnEstadoCuenta;
     }
 }

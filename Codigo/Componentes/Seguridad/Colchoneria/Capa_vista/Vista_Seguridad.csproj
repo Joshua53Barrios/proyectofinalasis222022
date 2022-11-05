@@ -60,7 +60,8 @@
     <Reference Include="VistaLogistica">
       <HintPath>..\..\..\..\Modulos\Logistica\VistaLogistica\bin\Debug\VistaLogistica.dll</HintPath>
     </Reference>
-    <Reference Include="Vista_Bancos">
+    <Reference Include="Vista_Bancos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Modulos\Bancos\Vista_Bancos\bin\Debug\Vista_Bancos.dll</HintPath>
     </Reference>
   </ItemGroup>

@@ -96,6 +96,10 @@ namespace Vista_Bancos
         private void btnDepositos_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            ChequePlanilla frm_chequePlanilla = new ChequePlanilla();
+            frm_chequePlanilla.MdiParent = this;
+            frm_chequePlanilla.Show();
+            logop.Visible = false;
         }
 
         private void btnNC_Click(object sender, EventArgs e)
@@ -204,6 +208,27 @@ namespace Vista_Bancos
             Conciliacion form_conci = new Conciliacion();
             form_conci.MdiParent = this;
             form_conci.Show();
+            logop.Visible = false;
+        }
+
+        private void btnRepCuentasBanc_Click(object sender, EventArgs e)
+        {
+            ReporteCuentasBancarias form_rptCuenBanc = new ReporteCuentasBancarias();
+            form_rptCuenBanc.MdiParent = this;
+            form_rptCuenBanc.Show();
+            logop.Visible = false;
+        }
+
+        private void btnReportesBancarios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEstadoCuenta_Click(object sender, EventArgs e)
+        {
+            EstadosCuentas form_estcta = new EstadosCuentas();
+            form_estcta.MdiParent = this;
+            form_estcta.Show();
             logop.Visible = false;
         }
     }

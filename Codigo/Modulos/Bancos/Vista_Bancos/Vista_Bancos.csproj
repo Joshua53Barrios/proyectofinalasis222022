@@ -83,6 +83,12 @@
     <Compile Include="Cheque.Designer.cs">
       <DependentUpon>Cheque.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChequePlanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChequePlanilla.Designer.cs">
+      <DependentUpon>ChequePlanilla.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConceptoBancario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,29 @@
     </Compile>
     <Compile Include="DisponibilidadD.Designer.cs">
       <DependentUpon>DisponibilidadD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsCheque.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCheque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EstadosCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadosCuentas.Designer.cs">
+      <DependentUpon>EstadosCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imprimirCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imprimirCheque.Designer.cs">
+      <DependentUpon>imprimirCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imprimirChequePlanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imprimirChequePlanilla.Designer.cs">
+      <DependentUpon>imprimirChequePlanilla.cs</DependentUpon>
     </Compile>
     <Compile Include="MovBancos.cs">
       <SubType>Form</SubType>
@@ -161,6 +190,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCuentasBancarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCuentasBancarias.Designer.cs">
+      <DependentUpon>ReporteCuentasBancarias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reporte_Conciliacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +227,9 @@
     <EmbeddedResource Include="Cheque.resx">
       <DependentUpon>Cheque.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChequePlanilla.resx">
+      <DependentUpon>ChequePlanilla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConceptoBancario.resx">
       <DependentUpon>ConceptoBancario.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,10 +245,21 @@
     <EmbeddedResource Include="DisponibilidadD.resx">
       <DependentUpon>DisponibilidadD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EstadosCuentas.resx">
+      <DependentUpon>EstadosCuentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imprimir.resx">
       <DependentUpon>Imprimir.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="imprimirCheque.rdlc" />
+    <EmbeddedResource Include="imprimirCheque.resx">
+      <DependentUpon>imprimirCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imprimirChequePlanilla.resx">
+      <DependentUpon>imprimirChequePlanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informeGeneralCtaBancarias.rdlc" />
+    <EmbeddedResource Include="informePersoCuentasBancarias.rdlc" />
+    <EmbeddedResource Include="informEstadoCuentas.rdlc" />
     <EmbeddedResource Include="MantBancos.resx">
       <DependentUpon>MantBancos.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +282,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="reporteCheque.rdlc" />
+    <EmbeddedResource Include="reporteChequePlanilla.rdlc" />
+    <EmbeddedResource Include="ReporteCuentasBancarias.resx">
+      <DependentUpon>ReporteCuentasBancarias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reporte_Conciliacion.resx">
       <DependentUpon>Reporte_Conciliacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,7 +298,23 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DsCheque.xsc">
+      <DependentUpon>DsCheque.xsd</DependentUpon>
+    </None>
+    <None Include="DsCheque.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCheque.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DsCheque.xss">
+      <DependentUpon>DsCheque.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Resources\bancos.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
