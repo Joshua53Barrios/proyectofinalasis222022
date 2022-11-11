@@ -150,7 +150,7 @@ namespace Vista_Bancos
         private void btnIngresosEgresos_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            Conciliacion form_conci = new Conciliacion();
+            Reporte_Conciliacion form_conci = new Reporte_Conciliacion();
             form_conci.MdiParent = this;
             form_conci.Show();
             logop.Visible = false;
@@ -159,7 +159,7 @@ namespace Vista_Bancos
         private void btnEgresos_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            Ordenes_Compras form_orde = new Ordenes_Compras();
+            Reporte_Orden form_orde = new Reporte_Orden();
             form_orde.MdiParent = this;
             form_orde.Show();
             logop.Visible = false;

@@ -31,13 +31,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Bancos\proyectofinalasis222022\Codigo\Componentes\Consultas\Capa_Vista\bin\Debug\Capa_VistaConsultas.dll</HintPath>
+    <Reference Include="Capa_VistaConsultas">
+      <HintPath>..\..\..\Componentes\Consultas\Capa_Vista\bin\Debug\Capa_VistaConsultas.dll</HintPath>
     </Reference>
     <Reference Include="Controlador_Bancos">
       <HintPath>..\Controlador_Bancos\bin\Debug\Controlador_Bancos.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -67,6 +70,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -144,6 +149,18 @@
     <Compile Include="EstadosCuentas.Designer.cs">
       <DependentUpon>EstadosCuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneradorReporteOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneradorReporteOrden.Designer.cs">
+      <DependentUpon>GeneradorReporteOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarReporteConciliacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarReporteConciliacion.Designer.cs">
+      <DependentUpon>GenerarReporteConciliacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="imprimirCheque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +226,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ReporteConciliacion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteConciliacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ReporteCuentasBancarias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +243,12 @@
     </Compile>
     <Compile Include="ReporteDisponibilidad.Designer.cs">
       <DependentUpon>ReporteDisponibilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOrdenCompra.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteOrdenCompra.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reporte_Conciliacion.cs">
       <SubType>Form</SubType>
@@ -271,6 +300,12 @@
     <EmbeddedResource Include="EstadosCuentas.resx">
       <DependentUpon>EstadosCuentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GeneradorReporteOrden.resx">
+      <DependentUpon>GeneradorReporteOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarReporteConciliacion.resx">
+      <DependentUpon>GenerarReporteConciliacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imprimir.resx">
       <DependentUpon>Imprimir.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,11 +343,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="reporteCheque.rdlc" />
     <EmbeddedResource Include="reporteChequePlanilla.rdlc" />
+    <EmbeddedResource Include="ReporteConciliacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteConciliacion.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteCuentasBancarias.resx">
       <DependentUpon>ReporteCuentasBancarias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteDisponibilidad.resx">
       <DependentUpon>ReporteDisponibilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOrdenCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteOrdenCompra.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte_Conciliacion.resx">
       <DependentUpon>Reporte_Conciliacion.cs</DependentUpon>
@@ -343,6 +386,9 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Resources\bancos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

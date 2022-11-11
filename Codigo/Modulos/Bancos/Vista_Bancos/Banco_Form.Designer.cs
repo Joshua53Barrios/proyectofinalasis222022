@@ -30,6 +30,14 @@ namespace Vista_Bancos
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnsalir = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnconsultaA = new System.Windows.Forms.Button();
+            this.btnHerramientas = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnreport = new System.Windows.Forms.Button();
             this.panelMantenimientos = new System.Windows.Forms.Panel();
             this.CncBancario = new System.Windows.Forms.Button();
             this.btnTipoDeCambio = new System.Windows.Forms.Button();
@@ -38,6 +46,7 @@ namespace Vista_Bancos
             this.btnMantenimientos = new System.Windows.Forms.Button();
             this.panelPartidasCont = new System.Windows.Forms.Panel();
             this.btnOrdenes = new System.Windows.Forms.Button();
+            this.btnIngresosEgresos = new System.Windows.Forms.Button();
             this.btnPolizas = new System.Windows.Forms.Button();
             this.btnPartidasCont = new System.Windows.Forms.Button();
             this.panelConceptosBanc = new System.Windows.Forms.Panel();
@@ -49,21 +58,12 @@ namespace Vista_Bancos
             this.btnCheques = new System.Windows.Forms.Button();
             this.Procesos = new System.Windows.Forms.Button();
             this.logop = new System.Windows.Forms.Panel();
-            this.btnreport = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnReportes = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnIngresosEgresos = new System.Windows.Forms.Button();
-            this.btnHerramientas = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnconsultaA = new System.Windows.Forms.Button();
-            this.btnsalir = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panelMantenimientos.SuspendLayout();
             this.panelPartidasCont.SuspendLayout();
             this.panelConceptosBanc.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -89,6 +89,135 @@ namespace Vista_Bancos
             this.panelSideMenu.Size = new System.Drawing.Size(316, 701);
             this.panelSideMenu.TabIndex = 3;
             this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
+            // 
+            // btnsalir
+            // 
+            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnsalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsalir.FlatAppearance.BorderSize = 0;
+            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnsalir.Location = new System.Drawing.Point(0, 928);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnsalir.Size = new System.Drawing.Size(295, 48);
+            this.btnsalir.TabIndex = 13;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseMnemonic = false;
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
+            this.panel2.Controls.Add(this.btnconsultaA);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 872);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(295, 56);
+            this.panel2.TabIndex = 12;
+            // 
+            // btnconsultaA
+            // 
+            this.btnconsultaA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
+            this.btnconsultaA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnconsultaA.FlatAppearance.BorderSize = 0;
+            this.btnconsultaA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconsultaA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconsultaA.Location = new System.Drawing.Point(0, 0);
+            this.btnconsultaA.Margin = new System.Windows.Forms.Padding(4);
+            this.btnconsultaA.Name = "btnconsultaA";
+            this.btnconsultaA.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnconsultaA.Size = new System.Drawing.Size(295, 48);
+            this.btnconsultaA.TabIndex = 10;
+            this.btnconsultaA.Text = "Consulta Avanzada";
+            this.btnconsultaA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnconsultaA.UseVisualStyleBackColor = false;
+            this.btnconsultaA.Click += new System.EventHandler(this.btnconsultaA_Click);
+            // 
+            // btnHerramientas
+            // 
+            this.btnHerramientas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHerramientas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHerramientas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHerramientas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnHerramientas.Location = new System.Drawing.Point(0, 822);
+            this.btnHerramientas.Name = "btnHerramientas";
+            this.btnHerramientas.Size = new System.Drawing.Size(295, 50);
+            this.btnHerramientas.TabIndex = 11;
+            this.btnHerramientas.Text = "Herramientas";
+            this.btnHerramientas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHerramientas.UseVisualStyleBackColor = true;
+            this.btnHerramientas.Click += new System.EventHandler(this.btnHerramientas_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnReportes);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 737);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(295, 85);
+            this.panel1.TabIndex = 10;
+            this.panel1.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(0, 48);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(295, 24);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Estados Cuentas";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.Location = new System.Drawing.Point(0, 0);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(295, 48);
+            this.btnReportes.TabIndex = 9;
+            this.btnReportes.Text = "Reportes Cuentas Bancarias";
+            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnreport
+            // 
+            this.btnreport.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnreport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnreport.FlatAppearance.BorderSize = 0;
+            this.btnreport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreport.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnreport.Location = new System.Drawing.Point(0, 689);
+            this.btnreport.Margin = new System.Windows.Forms.Padding(4);
+            this.btnreport.Name = "btnreport";
+            this.btnreport.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnreport.Size = new System.Drawing.Size(295, 48);
+            this.btnreport.TabIndex = 9;
+            this.btnreport.Text = "Reportes";
+            this.btnreport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnreport.UseVisualStyleBackColor = true;
+            this.btnreport.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panelMantenimientos
             // 
@@ -222,6 +351,23 @@ namespace Vista_Bancos
             this.btnOrdenes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOrdenes.UseVisualStyleBackColor = true;
             this.btnOrdenes.Click += new System.EventHandler(this.btnEgresos_Click);
+            // 
+            // btnIngresosEgresos
+            // 
+            this.btnIngresosEgresos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIngresosEgresos.FlatAppearance.BorderSize = 0;
+            this.btnIngresosEgresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresosEgresos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresosEgresos.Location = new System.Drawing.Point(0, 43);
+            this.btnIngresosEgresos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIngresosEgresos.Name = "btnIngresosEgresos";
+            this.btnIngresosEgresos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnIngresosEgresos.Size = new System.Drawing.Size(295, 44);
+            this.btnIngresosEgresos.TabIndex = 2;
+            this.btnIngresosEgresos.Text = "Concilacion Bancaria";
+            this.btnIngresosEgresos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIngresosEgresos.UseVisualStyleBackColor = true;
+            this.btnIngresosEgresos.Click += new System.EventHandler(this.btnIngresosEgresos_Click);
             // 
             // btnPolizas
             // 
@@ -406,153 +552,6 @@ namespace Vista_Bancos
             this.logop.Size = new System.Drawing.Size(867, 532);
             this.logop.TabIndex = 6;
             // 
-            // btnreport
-            // 
-            this.btnreport.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnreport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnreport.FlatAppearance.BorderSize = 0;
-            this.btnreport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreport.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnreport.Location = new System.Drawing.Point(0, 689);
-            this.btnreport.Margin = new System.Windows.Forms.Padding(4);
-            this.btnreport.Name = "btnreport";
-            this.btnreport.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnreport.Size = new System.Drawing.Size(295, 48);
-            this.btnreport.TabIndex = 9;
-            this.btnreport.Text = "Reportes";
-            this.btnreport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnreport.UseVisualStyleBackColor = true;
-            this.btnreport.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.btnReportes);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 737);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 85);
-            this.panel1.TabIndex = 10;
-            this.panel1.Visible = false;
-            // 
-            // btnReportes
-            // 
-            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
-            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportes.FlatAppearance.BorderSize = 0;
-            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.Location = new System.Drawing.Point(0, 0);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(295, 48);
-            this.btnReportes.TabIndex = 9;
-            this.btnReportes.Text = "Reportes Cuentas Bancarias";
-            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.UseVisualStyleBackColor = false;
-            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 48);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(295, 24);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Estados Cuentas";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnIngresosEgresos
-            // 
-            this.btnIngresosEgresos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIngresosEgresos.FlatAppearance.BorderSize = 0;
-            this.btnIngresosEgresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresosEgresos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresosEgresos.Location = new System.Drawing.Point(0, 43);
-            this.btnIngresosEgresos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnIngresosEgresos.Name = "btnIngresosEgresos";
-            this.btnIngresosEgresos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnIngresosEgresos.Size = new System.Drawing.Size(295, 44);
-            this.btnIngresosEgresos.TabIndex = 2;
-            this.btnIngresosEgresos.Text = "Concilacion Bancaria";
-            this.btnIngresosEgresos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIngresosEgresos.UseVisualStyleBackColor = true;
-            this.btnIngresosEgresos.Visible = false;
-            this.btnIngresosEgresos.Click += new System.EventHandler(this.btnIngresosEgresos_Click);
-            // 
-            // btnHerramientas
-            // 
-            this.btnHerramientas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHerramientas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHerramientas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHerramientas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnHerramientas.Location = new System.Drawing.Point(0, 822);
-            this.btnHerramientas.Name = "btnHerramientas";
-            this.btnHerramientas.Size = new System.Drawing.Size(295, 50);
-            this.btnHerramientas.TabIndex = 11;
-            this.btnHerramientas.Text = "Herramientas";
-            this.btnHerramientas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHerramientas.UseVisualStyleBackColor = true;
-            this.btnHerramientas.Click += new System.EventHandler(this.btnHerramientas_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
-            this.panel2.Controls.Add(this.btnconsultaA);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 872);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(295, 56);
-            this.panel2.TabIndex = 12;
-            // 
-            // btnconsultaA
-            // 
-            this.btnconsultaA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(237)))), ((int)(((byte)(223)))));
-            this.btnconsultaA.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnconsultaA.FlatAppearance.BorderSize = 0;
-            this.btnconsultaA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnconsultaA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconsultaA.Location = new System.Drawing.Point(0, 0);
-            this.btnconsultaA.Margin = new System.Windows.Forms.Padding(4);
-            this.btnconsultaA.Name = "btnconsultaA";
-            this.btnconsultaA.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnconsultaA.Size = new System.Drawing.Size(295, 48);
-            this.btnconsultaA.TabIndex = 10;
-            this.btnconsultaA.Text = "Consulta Avanzada";
-            this.btnconsultaA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnconsultaA.UseVisualStyleBackColor = false;
-            this.btnconsultaA.Click += new System.EventHandler(this.btnconsultaA_Click);
-            // 
-            // btnsalir
-            // 
-            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnsalir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnsalir.FlatAppearance.BorderSize = 0;
-            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnsalir.Location = new System.Drawing.Point(0, 928);
-            this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnsalir.Size = new System.Drawing.Size(295, 48);
-            this.btnsalir.TabIndex = 13;
-            this.btnsalir.Text = "Salir";
-            this.btnsalir.UseMnemonic = false;
-            this.btnsalir.UseVisualStyleBackColor = true;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
             // Banco_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -568,11 +567,11 @@ namespace Vista_Bancos
             this.Text = "Bancos";
             this.Load += new System.EventHandler(this.Banco_Form_Load);
             this.panelSideMenu.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panelMantenimientos.ResumeLayout(false);
             this.panelPartidasCont.ResumeLayout(false);
             this.panelConceptosBanc.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
