@@ -19,6 +19,8 @@ namespace Vista_Bancos
 
         private void ReporteDisponibilidad_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'DsCheque.DataTable2' Puede moverla o quitarla según sea necesario.
+            this.DataTable2TableAdapter.Fill(this.DsCheque.DataTable2);
 
             this.reportViewer1.RefreshReport();
         }

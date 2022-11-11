@@ -275,6 +275,7 @@
     <EmbeddedResource Include="imprimirChequePlanilla.resx">
       <DependentUpon>imprimirChequePlanilla.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="informeDisponibilidad.rdlc" />
     <EmbeddedResource Include="informeGeneralCtaBancarias.rdlc" />
     <EmbeddedResource Include="informePersoCuentasBancarias.rdlc" />
     <EmbeddedResource Include="informEstadoCuentas.rdlc" />

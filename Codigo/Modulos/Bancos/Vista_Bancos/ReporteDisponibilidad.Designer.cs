@@ -30,6 +30,7 @@ namespace Vista_Bancos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.DsCheque = new Vista_Bancos.DsCheque();
             this.DataCuentasBancariasBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -38,14 +39,21 @@ namespace Vista_Bancos
             this.DataMiembrosTableAdapter = new Vista_Bancos.DsChequeTableAdapters.DataMiembrosTableAdapter();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataTable1TableAdapter = new Vista_Bancos.DsChequeTableAdapters.DataTable1TableAdapter();
+            this.DataTable2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataTable2TableAdapter = new Vista_Bancos.DsChequeTableAdapters.DataTable2TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.DsCheque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataCuentasBancariasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataMiembrosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.DataTable2BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Vista_Bancos.informeDisponibilidad.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 12);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -84,6 +92,15 @@ namespace Vista_Bancos
             // 
             this.DataTable1TableAdapter.ClearBeforeFill = true;
             // 
+            // DataTable2BindingSource
+            // 
+            this.DataTable2BindingSource.DataMember = "DataTable2";
+            this.DataTable2BindingSource.DataSource = this.DsCheque;
+            // 
+            // DataTable2TableAdapter
+            // 
+            this.DataTable2TableAdapter.ClearBeforeFill = true;
+            // 
             // ReporteDisponibilidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -97,6 +114,7 @@ namespace Vista_Bancos
             ((System.ComponentModel.ISupportInitialize)(this.DataCuentasBancariasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataMiembrosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable2BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -110,5 +128,7 @@ namespace Vista_Bancos
         private System.Windows.Forms.BindingSource DataTable1BindingSource;
         private DsChequeTableAdapters.DataTable1TableAdapter DataTable1TableAdapter;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource DataTable2BindingSource;
+        private DsChequeTableAdapters.DataTable2TableAdapter DataTable2TableAdapter;
     }
 }
