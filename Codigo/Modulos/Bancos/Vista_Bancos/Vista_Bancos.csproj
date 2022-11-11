@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Bancos\proyectofinalasis222022\Codigo\Componentes\Consultas\Capa_Vista\bin\Debug\Capa_VistaConsultas.dll</HintPath>
+    </Reference>
     <Reference Include="Controlador_Bancos">
       <HintPath>..\Controlador_Bancos\bin\Debug\Controlador_Bancos.dll</HintPath>
     </Reference>

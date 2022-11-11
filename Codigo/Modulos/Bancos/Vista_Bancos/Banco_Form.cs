@@ -19,7 +19,7 @@ namespace Vista_Bancos
             InitializeComponent();
             HideStart();
             Button[] apps = {CncBancario,btnCheques,btnDepositos,btnDisponibilidad,
-            btnMovBanc,btnBitacora,btnConcilacionBancaria,btnPolizas,btnRepCuentasBanc,
+            btnMovBanc,btnBitacora,btnIngresosEgresos,btnPolizas,btnReportes,
             btnOrdenes,btnBancos,btnCuentasBanc,btnTipoDeCambio};
             cnseg.deshabilitarApps(apps);
 
@@ -53,6 +53,10 @@ namespace Vista_Bancos
                 panelPartidasCont.Visible = false;
             if (panelMantenimientos.Visible == true)
                 panelMantenimientos.Visible = false;
+            if(panel1.Visible==true)
+                panel1.Visible = false;
+            if (panel2.Visible == true)
+                panel2.Visible = false;
         }
         private void showSubMenu(Panel subMenu)
         {
@@ -146,6 +150,10 @@ namespace Vista_Bancos
         private void btnIngresosEgresos_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            Conciliacion form_conci = new Conciliacion();
+            form_conci.MdiParent = this;
+            form_conci.Show();
+            logop.Visible = false;
         }
 
         private void btnEgresos_Click(object sender, EventArgs e)
@@ -209,10 +217,7 @@ namespace Vista_Bancos
 
         private void btnConcilacionBancaria_Click(object sender, EventArgs e)
         {
-            Conciliacion form_conci = new Conciliacion();
-            form_conci.MdiParent = this;
-            form_conci.Show();
-            logop.Visible = false;
+  
         }
 
         private void btnRepCuentasBanc_Click(object sender, EventArgs e)
@@ -222,18 +227,52 @@ namespace Vista_Bancos
             form_rptCuenBanc.Show();
             logop.Visible = false;
         }
-
-        private void btnReportesBancarios_Click(object sender, EventArgs e)
+        private void btnReportes_Click(object sender, EventArgs e)
         {
-
+            hideSubMenu();
+            ReporteCuentasBancarias form_rptCuenBanc = new ReporteCuentasBancarias();
+            form_rptCuenBanc.MdiParent = this;
+            form_rptCuenBanc.Show();
+            logop.Visible = false;
         }
 
-        private void btnEstadoCuenta_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
+            showSubMenu(panel1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
             EstadosCuentas form_estcta = new EstadosCuentas();
             form_estcta.MdiParent = this;
             form_estcta.Show();
             logop.Visible = false;
+        }
+
+        private void panelSideMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnHerramientas_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panel2);
+        }
+
+        private void btnconsultaA_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            Capa_VistaConsultas.Busqueda consultar = new Capa_VistaConsultas.Busqueda();
+            consultar.MdiParent = this;
+            consultar.StartPosition = FormStartPosition.CenterScreen;
+            consultar.Show();
+
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
