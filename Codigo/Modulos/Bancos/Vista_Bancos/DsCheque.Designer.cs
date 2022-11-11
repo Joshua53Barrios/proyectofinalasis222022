@@ -7946,9 +7946,10 @@ WHERE  tbl_ctrl_chequesnominas.fk_trabajadornominas = tbl_trabajador.pk_id_traba
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT Pk_idCuentas,nombre_banco, tbl_cuentasbancos.Nombre_cta, tbl_cuentasbancos.TCargos_montbancario, tbl_cuentasbancos.TAbonos_montbancario, tbl_cuentasbancos.SActual_montbancario
+            this._commandCollection[0].CommandText = @"SELECT tbl_cuentasbancos.Pk_idCuentas, nombre_banco, tbl_cuentasbancos.Nombre_cta, tbl_cuentasbancos.TCargos_montbancario, tbl_cuentasbancos.TAbonos_montbancario, tbl_cuentasbancos.SActual_montbancario
 FROM     tbl_cuentasbancos, Tbl_bancos
-WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos";
+WHERE  (tbl_cuentasbancos.fk_bancos = Pk_idbancos)
+ORDER BY tbl_cuentasbancos.Pk_idCuentas";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

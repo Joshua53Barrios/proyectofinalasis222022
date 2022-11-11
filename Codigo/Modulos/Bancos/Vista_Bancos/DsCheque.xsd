@@ -254,9 +254,10 @@ WHERE  tbl_ctrl_chequesnominas.fk_trabajadornominas = tbl_trabajador.pk_id_traba
               <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT Pk_idCuentas,nombre_banco, tbl_cuentasbancos.Nombre_cta, tbl_cuentasbancos.TCargos_montbancario, tbl_cuentasbancos.TAbonos_montbancario, tbl_cuentasbancos.SActual_montbancario
+                    <CommandText>SELECT tbl_cuentasbancos.Pk_idCuentas, nombre_banco, tbl_cuentasbancos.Nombre_cta, tbl_cuentasbancos.TCargos_montbancario, tbl_cuentasbancos.TAbonos_montbancario, tbl_cuentasbancos.SActual_montbancario
 FROM     tbl_cuentasbancos, Tbl_bancos
-WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
+WHERE  (tbl_cuentasbancos.fk_bancos = Pk_idbancos)
+ORDER BY tbl_cuentasbancos.Pk_idCuentas</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -277,7 +278,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataMiembros" msprop:Generator_TableClassName="DataMiembrosDataTable" msprop:Generator_TableVarName="tableDataMiembros" msprop:Generator_RowChangedName="DataMiembrosRowChanged" msprop:Generator_TablePropName="DataMiembros" msprop:Generator_RowDeletingName="DataMiembrosRowDeleting" msprop:Generator_RowChangingName="DataMiembrosRowChanging" msprop:Generator_RowEvHandlerName="DataMiembrosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataMiembrosRowDeleted" msprop:Generator_RowClassName="DataMiembrosRow" msprop:Generator_UserTableName="DataMiembros" msprop:Generator_RowEvArgName="DataMiembrosRowChangeEvent">
+  <xs:element name="DataMiembros" msprop:Generator_TableClassName="DataMiembrosDataTable" msprop:Generator_TableVarName="tableDataMiembros" msprop:Generator_TablePropName="DataMiembros" msprop:Generator_RowDeletingName="DataMiembrosRowDeleting" msprop:Generator_RowChangingName="DataMiembrosRowChanging" msprop:Generator_RowEvHandlerName="DataMiembrosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataMiembrosRowDeleted" msprop:Generator_UserTableName="DataMiembros" msprop:Generator_RowChangedName="DataMiembrosRowChanged" msprop:Generator_RowEvArgName="DataMiembrosRowChangeEvent" msprop:Generator_RowClassName="DataMiembrosRow">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Nombre_Miembros" msprop:Generator_ColumnVarNameInTable="columnNombre_Miembros" msprop:Generator_ColumnPropNameInRow="Nombre_Miembros" msprop:Generator_ColumnPropNameInTable="Nombre_MiembrosColumn" msprop:Generator_UserColumnName="Nombre_Miembros" minOccurs="0">
@@ -309,7 +310,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="DataTiposPagos" msprop:Generator_TableClassName="DataTiposPagosDataTable" msprop:Generator_TableVarName="tableDataTiposPagos" msprop:Generator_TablePropName="DataTiposPagos" msprop:Generator_RowDeletingName="DataTiposPagosRowDeleting" msprop:Generator_RowChangingName="DataTiposPagosRowChanging" msprop:Generator_RowEvHandlerName="DataTiposPagosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTiposPagosRowDeleted" msprop:Generator_UserTableName="DataTiposPagos" msprop:Generator_RowChangedName="DataTiposPagosRowChanged" msprop:Generator_RowEvArgName="DataTiposPagosRowChangeEvent" msprop:Generator_RowClassName="DataTiposPagosRow">
+  <xs:element name="DataTiposPagos" msprop:Generator_TableClassName="DataTiposPagosDataTable" msprop:Generator_TableVarName="tableDataTiposPagos" msprop:Generator_RowChangedName="DataTiposPagosRowChanged" msprop:Generator_TablePropName="DataTiposPagos" msprop:Generator_RowDeletingName="DataTiposPagosRowDeleting" msprop:Generator_RowChangingName="DataTiposPagosRowChanging" msprop:Generator_RowEvHandlerName="DataTiposPagosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTiposPagosRowDeleted" msprop:Generator_RowClassName="DataTiposPagosRow" msprop:Generator_UserTableName="DataTiposPagos" msprop:Generator_RowEvArgName="DataTiposPagosRowChangeEvent">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Pk_idTipoPagos" msprop:Generator_ColumnVarNameInTable="columnPk_idTipoPagos" msprop:Generator_ColumnPropNameInRow="Pk_idTipoPagos" msprop:Generator_ColumnPropNameInTable="Pk_idTipoPagosColumn" msprop:Generator_UserColumnName="Pk_idTipoPagos" type="xs:int" />
@@ -323,7 +324,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="DataConceptosBancarios" msprop:Generator_TableClassName="DataConceptosBancariosDataTable" msprop:Generator_TableVarName="tableDataConceptosBancarios" msprop:Generator_TablePropName="DataConceptosBancarios" msprop:Generator_RowDeletingName="DataConceptosBancariosRowDeleting" msprop:Generator_RowChangingName="DataConceptosBancariosRowChanging" msprop:Generator_RowEvHandlerName="DataConceptosBancariosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataConceptosBancariosRowDeleted" msprop:Generator_UserTableName="DataConceptosBancarios" msprop:Generator_RowChangedName="DataConceptosBancariosRowChanged" msprop:Generator_RowEvArgName="DataConceptosBancariosRowChangeEvent" msprop:Generator_RowClassName="DataConceptosBancariosRow">
+  <xs:element name="DataConceptosBancarios" msprop:Generator_TableClassName="DataConceptosBancariosDataTable" msprop:Generator_TableVarName="tableDataConceptosBancarios" msprop:Generator_RowChangedName="DataConceptosBancariosRowChanged" msprop:Generator_TablePropName="DataConceptosBancarios" msprop:Generator_RowDeletingName="DataConceptosBancariosRowDeleting" msprop:Generator_RowChangingName="DataConceptosBancariosRowChanging" msprop:Generator_RowEvHandlerName="DataConceptosBancariosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataConceptosBancariosRowDeleted" msprop:Generator_RowClassName="DataConceptosBancariosRow" msprop:Generator_UserTableName="DataConceptosBancarios" msprop:Generator_RowEvArgName="DataConceptosBancariosRowChangeEvent">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Pk_idConcepto" msprop:Generator_ColumnVarNameInTable="columnPk_idConcepto" msprop:Generator_ColumnPropNameInRow="Pk_idConcepto" msprop:Generator_ColumnPropNameInTable="Pk_idConceptoColumn" msprop:Generator_UserColumnName="Pk_idConcepto" type="xs:int" />
@@ -346,7 +347,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="DataCuentaBancos" msprop:Generator_TableClassName="DataCuentaBancosDataTable" msprop:Generator_TableVarName="tableDataCuentaBancos" msprop:Generator_RowChangedName="DataCuentaBancosRowChanged" msprop:Generator_TablePropName="DataCuentaBancos" msprop:Generator_RowDeletingName="DataCuentaBancosRowDeleting" msprop:Generator_RowChangingName="DataCuentaBancosRowChanging" msprop:Generator_RowEvHandlerName="DataCuentaBancosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataCuentaBancosRowDeleted" msprop:Generator_RowClassName="DataCuentaBancosRow" msprop:Generator_UserTableName="DataCuentaBancos" msprop:Generator_RowEvArgName="DataCuentaBancosRowChangeEvent">
+  <xs:element name="DataCuentaBancos" msprop:Generator_TableClassName="DataCuentaBancosDataTable" msprop:Generator_TableVarName="tableDataCuentaBancos" msprop:Generator_TablePropName="DataCuentaBancos" msprop:Generator_RowDeletingName="DataCuentaBancosRowDeleting" msprop:Generator_RowChangingName="DataCuentaBancosRowChanging" msprop:Generator_RowEvHandlerName="DataCuentaBancosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataCuentaBancosRowDeleted" msprop:Generator_UserTableName="DataCuentaBancos" msprop:Generator_RowChangedName="DataCuentaBancosRowChanged" msprop:Generator_RowEvArgName="DataCuentaBancosRowChangeEvent" msprop:Generator_RowClassName="DataCuentaBancosRow">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Pk_idCuentas" msprop:Generator_ColumnVarNameInTable="columnPk_idCuentas" msprop:Generator_ColumnPropNameInRow="Pk_idCuentas" msprop:Generator_ColumnPropNameInTable="Pk_idCuentasColumn" msprop:Generator_UserColumnName="Pk_idCuentas" type="xs:int" />
@@ -368,7 +369,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="DataCuentasBancarias" msprop:Generator_TableClassName="DataCuentasBancariasDataTable" msprop:Generator_TableVarName="tableDataCuentasBancarias" msprop:Generator_RowChangedName="DataCuentasBancariasRowChanged" msprop:Generator_TablePropName="DataCuentasBancarias" msprop:Generator_RowDeletingName="DataCuentasBancariasRowDeleting" msprop:Generator_RowChangingName="DataCuentasBancariasRowChanging" msprop:Generator_RowEvHandlerName="DataCuentasBancariasRowChangeEventHandler" msprop:Generator_RowDeletedName="DataCuentasBancariasRowDeleted" msprop:Generator_RowClassName="DataCuentasBancariasRow" msprop:Generator_UserTableName="DataCuentasBancarias" msprop:Generator_RowEvArgName="DataCuentasBancariasRowChangeEvent">
+  <xs:element name="DataCuentasBancarias" msprop:Generator_TableClassName="DataCuentasBancariasDataTable" msprop:Generator_TableVarName="tableDataCuentasBancarias" msprop:Generator_TablePropName="DataCuentasBancarias" msprop:Generator_RowDeletingName="DataCuentasBancariasRowDeleting" msprop:Generator_RowChangingName="DataCuentasBancariasRowChanging" msprop:Generator_RowEvHandlerName="DataCuentasBancariasRowChangeEventHandler" msprop:Generator_RowDeletedName="DataCuentasBancariasRowDeleted" msprop:Generator_UserTableName="DataCuentasBancarias" msprop:Generator_RowChangedName="DataCuentasBancariasRowChanged" msprop:Generator_RowEvArgName="DataCuentasBancariasRowChangeEvent" msprop:Generator_RowClassName="DataCuentasBancariasRow">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="pk_id_ctabancaria" msprop:Generator_ColumnVarNameInTable="columnpk_id_ctabancaria" msprop:Generator_ColumnPropNameInRow="pk_id_ctabancaria" msprop:Generator_ColumnPropNameInTable="pk_id_ctabancariaColumn" msprop:Generator_UserColumnName="pk_id_ctabancaria" type="xs:int" />
@@ -408,7 +409,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
         <xs:element ref="DataConceptosBancarios" />
         <xs:element ref="DataCuentaBancos" />
         <xs:element ref="DataCuentasBancarias" />
-        <xs:element name="DataTableCheque" msprop:Generator_TableClassName="DataTableChequeDataTable" msprop:Generator_TableVarName="tableDataTableCheque" msprop:Generator_TablePropName="DataTableCheque" msprop:Generator_RowDeletingName="DataTableChequeRowDeleting" msprop:Generator_RowChangingName="DataTableChequeRowChanging" msprop:Generator_RowEvHandlerName="DataTableChequeRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableChequeRowDeleted" msprop:Generator_UserTableName="DataTableCheque" msprop:Generator_RowChangedName="DataTableChequeRowChanged" msprop:Generator_RowEvArgName="DataTableChequeRowChangeEvent" msprop:Generator_RowClassName="DataTableChequeRow">
+        <xs:element name="DataTableCheque" msprop:Generator_TableClassName="DataTableChequeDataTable" msprop:Generator_TableVarName="tableDataTableCheque" msprop:Generator_RowChangedName="DataTableChequeRowChanged" msprop:Generator_TablePropName="DataTableCheque" msprop:Generator_RowDeletingName="DataTableChequeRowDeleting" msprop:Generator_RowChangingName="DataTableChequeRowChanging" msprop:Generator_RowEvHandlerName="DataTableChequeRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableChequeRowDeleted" msprop:Generator_RowClassName="DataTableChequeRow" msprop:Generator_UserTableName="DataTableCheque" msprop:Generator_RowEvArgName="DataTableChequeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Pk_idControl_cheques" msprop:Generator_ColumnVarNameInTable="columnPk_idControl_cheques" msprop:Generator_ColumnPropNameInRow="Pk_idControl_cheques" msprop:Generator_ColumnPropNameInTable="Pk_idControl_chequesColumn" msprop:Generator_UserColumnName="Pk_idControl_cheques" type="xs:int" />
@@ -432,7 +433,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataBancos" msprop:Generator_TableClassName="DataBancosDataTable" msprop:Generator_TableVarName="tableDataBancos" msprop:Generator_TablePropName="DataBancos" msprop:Generator_RowDeletingName="DataBancosRowDeleting" msprop:Generator_RowChangingName="DataBancosRowChanging" msprop:Generator_RowEvHandlerName="DataBancosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataBancosRowDeleted" msprop:Generator_UserTableName="DataBancos" msprop:Generator_RowChangedName="DataBancosRowChanged" msprop:Generator_RowEvArgName="DataBancosRowChangeEvent" msprop:Generator_RowClassName="DataBancosRow">
+        <xs:element name="DataBancos" msprop:Generator_TableClassName="DataBancosDataTable" msprop:Generator_TableVarName="tableDataBancos" msprop:Generator_RowChangedName="DataBancosRowChanged" msprop:Generator_TablePropName="DataBancos" msprop:Generator_RowDeletingName="DataBancosRowDeleting" msprop:Generator_RowChangingName="DataBancosRowChanging" msprop:Generator_RowEvHandlerName="DataBancosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataBancosRowDeleted" msprop:Generator_RowClassName="DataBancosRow" msprop:Generator_UserTableName="DataBancos" msprop:Generator_RowEvArgName="DataBancosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Pk_idbancos" msprop:Generator_ColumnVarNameInTable="columnPk_idbancos" msprop:Generator_ColumnPropNameInRow="Pk_idbancos" msprop:Generator_ColumnPropNameInTable="Pk_idbancosColumn" msprop:Generator_UserColumnName="Pk_idbancos" type="xs:int" />
@@ -461,7 +462,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTipoCambio" msprop:Generator_TableClassName="DataTipoCambioDataTable" msprop:Generator_TableVarName="tableDataTipoCambio" msprop:Generator_TablePropName="DataTipoCambio" msprop:Generator_RowDeletingName="DataTipoCambioRowDeleting" msprop:Generator_RowChangingName="DataTipoCambioRowChanging" msprop:Generator_RowEvHandlerName="DataTipoCambioRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTipoCambioRowDeleted" msprop:Generator_UserTableName="DataTipoCambio" msprop:Generator_RowChangedName="DataTipoCambioRowChanged" msprop:Generator_RowEvArgName="DataTipoCambioRowChangeEvent" msprop:Generator_RowClassName="DataTipoCambioRow">
+        <xs:element name="DataTipoCambio" msprop:Generator_TableClassName="DataTipoCambioDataTable" msprop:Generator_TableVarName="tableDataTipoCambio" msprop:Generator_RowChangedName="DataTipoCambioRowChanged" msprop:Generator_TablePropName="DataTipoCambio" msprop:Generator_RowDeletingName="DataTipoCambioRowDeleting" msprop:Generator_RowChangingName="DataTipoCambioRowChanging" msprop:Generator_RowEvHandlerName="DataTipoCambioRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTipoCambioRowDeleted" msprop:Generator_RowClassName="DataTipoCambioRow" msprop:Generator_UserTableName="DataTipoCambio" msprop:Generator_RowEvArgName="DataTipoCambioRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Pk_regTipoCambio" msprop:Generator_ColumnVarNameInTable="columnPk_regTipoCambio" msprop:Generator_ColumnPropNameInRow="Pk_regTipoCambio" msprop:Generator_ColumnPropNameInTable="Pk_regTipoCambioColumn" msprop:Generator_UserColumnName="Pk_regTipoCambio" type="xs:int" />
@@ -478,7 +479,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataMovBancarios" msprop:Generator_TableClassName="DataMovBancariosDataTable" msprop:Generator_TableVarName="tableDataMovBancarios" msprop:Generator_TablePropName="DataMovBancarios" msprop:Generator_RowDeletingName="DataMovBancariosRowDeleting" msprop:Generator_RowChangingName="DataMovBancariosRowChanging" msprop:Generator_RowEvHandlerName="DataMovBancariosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataMovBancariosRowDeleted" msprop:Generator_UserTableName="DataMovBancarios" msprop:Generator_RowChangedName="DataMovBancariosRowChanged" msprop:Generator_RowEvArgName="DataMovBancariosRowChangeEvent" msprop:Generator_RowClassName="DataMovBancariosRow">
+        <xs:element name="DataMovBancarios" msprop:Generator_TableClassName="DataMovBancariosDataTable" msprop:Generator_TableVarName="tableDataMovBancarios" msprop:Generator_RowChangedName="DataMovBancariosRowChanged" msprop:Generator_TablePropName="DataMovBancarios" msprop:Generator_RowDeletingName="DataMovBancariosRowDeleting" msprop:Generator_RowChangingName="DataMovBancariosRowChanging" msprop:Generator_RowEvHandlerName="DataMovBancariosRowChangeEventHandler" msprop:Generator_RowDeletedName="DataMovBancariosRowDeleted" msprop:Generator_RowClassName="DataMovBancariosRow" msprop:Generator_UserTableName="DataMovBancarios" msprop:Generator_RowEvArgName="DataMovBancariosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="fecha_mov" msprop:Generator_ColumnVarNameInTable="columnfecha_mov" msprop:Generator_ColumnPropNameInRow="fecha_mov" msprop:Generator_ColumnPropNameInTable="fecha_movColumn" msprop:Generator_UserColumnName="fecha_mov" type="xs:dateTime" minOccurs="0" />
@@ -508,7 +509,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="fechaAplicacion_chequesN" msprop:Generator_ColumnVarNameInTable="columnfechaAplicacion_chequesN" msprop:Generator_ColumnPropNameInRow="fechaAplicacion_chequesN" msprop:Generator_ColumnPropNameInTable="fechaAplicacion_chequesNColumn" msprop:Generator_UserColumnName="fechaAplicacion_chequesN" type="xs:dateTime" minOccurs="0" />
@@ -532,7 +533,7 @@ WHERE  tbl_cuentasbancos.fk_bancos = Pk_idbancos</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_RowClassName="DataTable2Row" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="nombre_banco" msprop:Generator_ColumnVarNameInTable="columnnombre_banco" msprop:Generator_ColumnPropNameInRow="nombre_banco" msprop:Generator_ColumnPropNameInTable="nombre_bancoColumn" msprop:Generator_UserColumnName="nombre_banco" minOccurs="0">

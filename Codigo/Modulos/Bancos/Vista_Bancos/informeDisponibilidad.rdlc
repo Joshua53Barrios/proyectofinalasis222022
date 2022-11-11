@@ -6,6 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
+<<<<<<< HEAD
               <Width>3.40189cm</Width>
             </TablixColumn>
             <TablixColumn>
@@ -22,6 +23,24 @@
             </TablixColumn>
             <TablixColumn>
               <Width>3.40189cm</Width>
+=======
+              <Width>1.357cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.96567cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.09267cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+>>>>>>> main
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -37,13 +56,23 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+<<<<<<< HEAD
                               <Value>ID </Value>
+=======
+                              <Value>ID</Value>
+>>>>>>> main
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox4</rd:DefaultName>
@@ -52,6 +81,10 @@
                           <Style>None</Style>
                         </Border>
                         <BackgroundColor>Tomato</BackgroundColor>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -75,7 +108,13 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox6</rd:DefaultName>
@@ -84,6 +123,10 @@
                           <Style>None</Style>
                         </Border>
                         <BackgroundColor>Tomato</BackgroundColor>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -101,13 +144,23 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+<<<<<<< HEAD
                               <Value>Nombre cuenta</Value>
+=======
+                              <Value>Nombre Cuenta</Value>
+>>>>>>> main
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox8</rd:DefaultName>
@@ -116,6 +169,45 @@
                           <Style>None</Style>
                         </Border>
                         <BackgroundColor>Tomato</BackgroundColor>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox10">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Cargos</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox10</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>Tomato</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -133,13 +225,23 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+<<<<<<< HEAD
                               <Value>Cargos</Value>
+=======
+                              <Value>Abonos</Value>
+>>>>>>> main
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -148,6 +250,10 @@
                           <Style>None</Style>
                         </Border>
                         <BackgroundColor>Tomato</BackgroundColor>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -165,13 +271,23 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+<<<<<<< HEAD
                               <Value>Abonos</Value>
+=======
+                              <Value>Saldo</Value>
+>>>>>>> main
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox14</rd:DefaultName>
@@ -180,6 +296,7 @@
                           <Style>None</Style>
                         </Border>
                         <BackgroundColor>Tomato</BackgroundColor>
+<<<<<<< HEAD
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -212,6 +329,9 @@
                           <Style>None</Style>
                         </Border>
                         <BackgroundColor>Tomato</BackgroundColor>
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -238,7 +358,13 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Pk_idCuentas</rd:DefaultName>
@@ -246,6 +372,10 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -267,7 +397,13 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>nombre_banco</rd:DefaultName>
@@ -275,6 +411,10 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -296,7 +436,13 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
+<<<<<<< HEAD
                           <Style />
+=======
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Nombre_cta</rd:DefaultName>
@@ -304,6 +450,10 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -322,10 +472,21 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TCargos_montbancario.Value</Value>
+<<<<<<< HEAD
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
+=======
+                              <Style>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TCargos_montbancario</rd:DefaultName>
@@ -333,13 +494,20 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+<<<<<<< HEAD
                     <rd:Selected>true</rd:Selected>
+=======
+>>>>>>> main
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -352,10 +520,21 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TAbonos_montbancario.Value</Value>
+<<<<<<< HEAD
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
+=======
+                              <Style>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TAbonos_montbancario</rd:DefaultName>
@@ -363,6 +542,10 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -381,10 +564,21 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!SActual_montbancario.Value</Value>
+<<<<<<< HEAD
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
+=======
+                              <Style>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+>>>>>>> main
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>SActual_montbancario</rd:DefaultName>
@@ -392,6 +586,10 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+<<<<<<< HEAD
+=======
+                        <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -425,10 +623,17 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
+<<<<<<< HEAD
         <Top>1.19803cm</Top>
         <Left>0.7153cm</Left>
         <Height>1.2cm</Height>
         <Width>20.41136cm</Width>
+=======
+        <Top>0.69003cm</Top>
+        <Left>0.66887cm</Left>
+        <Height>1.2cm</Height>
+        <Width>14.91533cm</Width>
+>>>>>>> main
         <Style>
           <Border>
             <Style>None</Style>
@@ -436,16 +641,38 @@
         </Style>
       </Tablix>
     </ReportItems>
+<<<<<<< HEAD
     <Height>2in</Height>
     <Style />
   </Body>
   <Width>8.87592in</Width>
+=======
+    <Height>0.84167in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+>>>>>>> main
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
+<<<<<<< HEAD
+=======
+        <Image Name="Image1">
+          <Source>Embedded</Source>
+          <Value>Imagen1</Value>
+          <Sizing>FitProportional</Sizing>
+          <Height>2.54cm</Height>
+          <Width>3.55317cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+>>>>>>> main
         <Textbox Name="Textbox1">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -453,14 +680,21 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
+<<<<<<< HEAD
                   <Value>Reporte General Cuentas Bancarias</Value>
                   <Style>
                     <FontFamily>Segoe UI</FontFamily>
                     <FontSize>14pt</FontSize>
+=======
+                  <Value>Reporte de Disponibilidad</Value>
+                  <Style>
+                    <FontSize>16pt</FontSize>
+>>>>>>> main
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
+<<<<<<< HEAD
               <Style />
             </Paragraph>
           </Paragraphs>
@@ -469,16 +703,34 @@
           <Left>3.4128cm</Left>
           <Height>0.87517cm</Height>
           <Width>9.8025cm</Width>
+=======
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>1.26153cm</Top>
+          <Left>3.72956cm</Left>
+          <Height>0.80574cm</Height>
+          <Width>7.58cm</Width>
+          <ZIndex>1</ZIndex>
+>>>>>>> main
           <Style>
             <Border>
               <Style>None</Style>
             </Border>
+<<<<<<< HEAD
+=======
+            <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+<<<<<<< HEAD
         <Image Name="Image1">
           <Source>Embedded</Source>
           <Value>Imagen1</Value>
@@ -493,6 +745,8 @@
             </Border>
           </Style>
         </Image>
+=======
+>>>>>>> main
         <Textbox Name="Textbox2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -500,14 +754,20 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
+<<<<<<< HEAD
                   <Value>Fecha: </Value>
                   <Style>
                     <FontFamily>Segoe UI</FontFamily>
                     <FontSize>8pt</FontSize>
+=======
+                  <Value>Fecha:</Value>
+                  <Style>
+>>>>>>> main
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
+<<<<<<< HEAD
               <Style />
             </Paragraph>
           </Paragraphs>
@@ -516,11 +776,27 @@
           <Left>14.3383cm</Left>
           <Height>0.6cm</Height>
           <Width>1.0395cm</Width>
+=======
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>0.3302cm</Top>
+          <Left>9.6647cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.27233cm</Width>
+>>>>>>> main
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
             </Border>
+<<<<<<< HEAD
+=======
+            <VerticalAlign>Middle</VerticalAlign>
+>>>>>>> main
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -534,21 +810,173 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
+<<<<<<< HEAD
                   <Value>=Globals!ExecutionTime</Value>
                   <Style>
                     <FontFamily>Segoe UI</FontFamily>
                     <FontSize>8pt</FontSize>
+=======
+                  <Value>=</Value>
+                  <Style>
+                    <Format>D</Format>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox3</rd:DefaultName>
+          <Top>0.3302cm</Top>
+          <Left>11.11342cm</Left>
+          <Height>0.6cm</Height>
+          <Width>4.89183cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>1.69333cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox20">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!TotalPages</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox20</rd:DefaultName>
+          <Top>0.34558cm</Top>
+          <Left>9.5847cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox21">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Páginas</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+>>>>>>> main
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
+<<<<<<< HEAD
           <rd:DefaultName>Textbox3</rd:DefaultName>
           <Top>0.85937cm</Top>
           <Left>15.6845cm</Left>
           <Height>0.6cm</Height>
           <Width>5.44216cm</Width>
+=======
+          <rd:DefaultName>Textbox21</rd:DefaultName>
+          <Top>0.34558cm</Top>
+          <Left>4.27187cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.69567cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox22">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!PageNumber</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox22</rd:DefaultName>
+          <Top>0.34558cm</Top>
+          <Left>6.38853cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.69567cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox23">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>de</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox21</rd:DefaultName>
+          <Top>0.34558cm</Top>
+          <Left>8.3855cm</Left>
+          <Height>0.6cm</Height>
+          <Width>0.93367cm</Width>
+>>>>>>> main
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -566,7 +994,11 @@
           <Style>None</Style>
         </Border>
       </Style>
+<<<<<<< HEAD
     </PageHeader>
+=======
+    </PageFooter>
+>>>>>>> main
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
     <LeftMargin>2cm</LeftMargin>
@@ -583,7 +1015,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
+<<<<<<< HEAD
       <rd:DataSourceID>42aeaaad-8124-476f-bbde-a2423a63a8cb</rd:DataSourceID>
+=======
+      <rd:DataSourceID>17f106ed-a31d-4678-8b41-6cc1df2d39d8</rd:DataSourceID>
+>>>>>>> main
     </DataSource>
   </DataSources>
   <DataSets>
@@ -752,5 +1188,9 @@ xxeLmN2fRIxnVAYHjPTdUvFyE02vMOkX0TX61lkpXqpRg70Cxlc5Peo0sDf1ImqFTKWIqdsham3YQBba
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
+<<<<<<< HEAD
   <rd:ReportID>737e46b2-29b6-40d0-86d3-28000170b658</rd:ReportID>
+=======
+  <rd:ReportID>2e537a54-b05a-4263-9bc6-f9a08f50e4fb</rd:ReportID>
+>>>>>>> main
 </Report>
