@@ -141,6 +141,7 @@ namespace Vista_Bancos
         private void btnPolizas_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            //ConceptoPoliza pol = new ConceptoPoliza();
             Polizas pol = new Polizas();
             pol.MdiParent = this;
             pol.Show();

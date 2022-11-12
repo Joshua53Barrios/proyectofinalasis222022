@@ -29,7 +29,6 @@ namespace Vista_Bancos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_idtipopoli = new System.Windows.Forms.TextBox();
             this.txt_estadopoli = new System.Windows.Forms.TextBox();
@@ -37,18 +36,9 @@ namespace Vista_Bancos
             this.label3 = new System.Windows.Forms.Label();
             this.txt_despoli = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DESCRIPCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ESTADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.navegador1 = new NavegadorVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(30, 12);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(574, 152);
-            this.navegador1.TabIndex = 1;
             // 
             // label1
             // 
@@ -104,35 +94,26 @@ namespace Vista_Bancos
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.DESCRIPCION,
-            this.ESTADO});
             this.dataGridView1.Location = new System.Drawing.Point(119, 248);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(425, 78);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.Tag = "tbl_tipopoliza";
             // 
-            // ID
+            // navegador1
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // DESCRIPCION
-            // 
-            this.DESCRIPCION.HeaderText = "DESCRIPCION";
-            this.DESCRIPCION.Name = "DESCRIPCION";
-            // 
-            // ESTADO
-            // 
-            this.ESTADO.HeaderText = "ESTADO";
-            this.ESTADO.Name = "ESTADO";
+            this.navegador1.Location = new System.Drawing.Point(30, 12);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(578, 152);
+            this.navegador1.TabIndex = 29;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_1);
             // 
             // ConceptoPoliza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 360);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_despoli);
             this.Controls.Add(this.label3);
@@ -140,7 +121,6 @@ namespace Vista_Bancos
             this.Controls.Add(this.txt_estadopoli);
             this.Controls.Add(this.txt_idtipopoli);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "ConceptoPoliza";
             this.Text = "ConceptoPoliza";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -150,8 +130,6 @@ namespace Vista_Bancos
         }
 
         #endregion
-
-        private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_idtipopoli;
         private System.Windows.Forms.TextBox txt_estadopoli;
@@ -159,8 +137,6 @@ namespace Vista_Bancos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_despoli;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ESTADO;
+        private NavegadorVista.Navegador navegador1;
     }
 }

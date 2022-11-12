@@ -250,6 +250,18 @@
       <DependentUpon>ReporteOrdenCompra.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ReportePoliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePoliza.Designer.cs">
+      <DependentUpon>ReportePoliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPoliza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPoliza.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reporte_Conciliacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,6 +368,13 @@
     <EmbeddedResource Include="ReporteOrdenCompra.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteOrdenCompra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePoliza.resx">
+      <DependentUpon>ReportePoliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPoliza.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPoliza.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte_Conciliacion.resx">
       <DependentUpon>Reporte_Conciliacion.cs</DependentUpon>

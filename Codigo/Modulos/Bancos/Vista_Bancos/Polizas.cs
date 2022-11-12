@@ -33,8 +33,9 @@ namespace Vista_Bancos
 
         private void conceptoPolizasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConceptoPoliza conpol = new ConceptoPoliza();
+            //ConceptoPoliza conpol = new ConceptoPoliza();
             // nuv.MdiParent = this;
+            ReportePoliza conpol = new ReportePoliza();
             conpol.Show();
         }
 

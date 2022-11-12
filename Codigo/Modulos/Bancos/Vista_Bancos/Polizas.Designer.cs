@@ -34,7 +34,6 @@ namespace Vista_Bancos
             this.consultarPólizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conceptoPolizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,17 +73,10 @@ namespace Vista_Bancos
             // 
             // conceptoPolizasToolStripMenuItem
             // 
-            this.conceptoPolizasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
             this.conceptoPolizasToolStripMenuItem.Name = "conceptoPolizasToolStripMenuItem";
             this.conceptoPolizasToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
             this.conceptoPolizasToolStripMenuItem.Text = "Concepto polizas";
             this.conceptoPolizasToolStripMenuItem.Click += new System.EventHandler(this.conceptoPolizasToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             // 
             // Polizas
             // 
@@ -109,6 +101,5 @@ namespace Vista_Bancos
         private System.Windows.Forms.ToolStripMenuItem consultarPólizasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem conceptoPolizasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
